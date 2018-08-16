@@ -8,7 +8,7 @@ declare -a svc=()
 # ENVIRONMENT Green
 declare -a svc2=()
 
-# checa qual ambiente é blue e qual é green para o chaveamento
+# check witch env is blue and witch is green and make swap
 for i in ${!svc[*]}; do
   green=`kubectl get svc/${svc[$i]} -o yaml | grep app: | cut -d: -f 2 | tr -d ' ' | tail -1`;
   echo $green;
