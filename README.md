@@ -14,6 +14,13 @@ I worked on a project who have this same problems, and to solve I create a coupl
  
  *I know thats not a really nice thing, but, sometimes we need to adapt us the rules of the company to be able to innovate.*
  
-## How to use
 
 ## How to deploy
+- Clone this repo;
+- cd manifests; 
+- kubectl apply -f .
+
+## How to use
+- cd scripts;
+- chmod u+x bluegreen.sh
+- /bin/bash bluegreen.sh
