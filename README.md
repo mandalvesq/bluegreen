@@ -16,11 +16,15 @@ I worked on a project who have this same problems, and to solve I create a coupl
  
 
 ## How to deploy
+```
 - Clone this repo;
 - cd manifests; 
 - kubectl apply -f .
+```
 
 ## How to use
+```
 - cd scripts;
 - chmod u+x bluegreen.sh
 - /bin/bash bluegreen.sh
+```
